@@ -7,105 +7,103 @@
   <link rel="stylesheet" href="/styles.css">
 </head>
 <body>
-  <header class="site-header">
-    <a href="/" class="site-logo">
-      <div class="name">Quinton Brogan</div>
-      <div class="title">Director of Photography</div>
-    </a>
-    <nav class="site-nav">
-      <a href="/">Commercial</a>
-      <a href="/music-video" class="active">Music Video</a>
-      <a href="/docu">Doc</a>
-      <a href="/equipment">Equipment</a>
-      <a href="/about">About</a>
-    </nav>
-    <button class="hamburger" onclick="document.querySelector('.mobile-nav').classList.add('open')">
-      <span></span><span></span><span></span>
-    </button>
-  </header>
 
-  <div class="mobile-nav">
-    <button class="close-btn" onclick="this.parentElement.classList.remove('open')">&times;</button>
+<header class="site-header">
+  <a href="/" class="site-logo">
+    <div class="name">Quinton Brogan</div>
+    <div class="title">Director of Photography</div>
+  </a>
+  <nav class="site-nav">
     <a href="/">Commercial</a>
-    <a href="/music-video">Music Video</a>
+    <a href="/music-video" class="active">Music Video</a>
     <a href="/docu">Doc</a>
     <a href="/equipment">Equipment</a>
     <a href="/about">About</a>
+  </nav>
+  <button class="hamburger" onclick="document.querySelector('.mobile-nav').classList.add('open')">
+    <span></span><span></span><span></span>
+  </button>
+</header>
+
+<div class="mobile-nav">
+  <button class="close-btn" onclick="this.parentElement.classList.remove('open')">&times;</button>
+  <a href="/">Commercial</a>
+  <a href="/music-video">Music Video</a>
+  <a href="/docu">Doc</a>
+  <a href="/equipment">Equipment</a>
+  <a href="/about">About</a>
+</div>
+
+<main>
+  <div class="portfolio-grid" id="grid"></div>
+</main>
+<footer class="site-footer">
+  <div class="footer-name"><a href="/">Quinton Brogan</a></div>
+  <div class="footer-bio">Quinton Brogan is an IATSE Local 600 DP living in New England</div>
+  <div class="footer-social">
+    <a href="https://www.instagram.com/quintonbrogan/" target="_blank" rel="noopener" aria-label="Instagram">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+    </a>
   </div>
+  <div class="footer-copyright">&copy;2026 Quinton Brogan. All rights reserved. No part of this website may be reproduced without permission.</div>
+</footer>
 
-  <main>
-    <div class="portfolio-grid" id="grid"></div>
-  </main>
-
-  <footer class="site-footer">
-    <div class="footer-name"><a href="/">Quinton Brogan</a></div>
-    <div class="footer-bio">Quinton Brogan is an IATSE Local 600 DP living in New England</div>
-    <div class="footer-social">
-      <a href="https://www.instagram.com/quintonbrogan/" target="_blank" rel="noopener" aria-label="Instagram">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
-      </a>
-    </div>
-    <div class="footer-copyright">&copy;2026 Quinton Brogan. All rights reserved. No part of this website may be reproduced without permission.</div>
-  </footer>
-
-  <script src="/data.js"></script>
-  <script>
-    function getVideoThumbnail(item) {
-      if (item.type === 'youtube') {
-        var id = item.video.split('/embed/')[1];
-        return 'https://img.youtube.com/vi/' + id + '/hqdefault.jpg';
-      }
-      if (item.type === 'vimeo') {
-        var id = item.video.split('/video/')[1];
-        return 'https://vumbnail.com/' + id + '.jpg';
-      }
-      return null;
+<script src="/data.js"></script>
+<script>  function getVideoThumbnail(item) {
+    if (item.type === 'youtube') {
+      var id = item.video.split('/embed/')[1];
+      return 'https://img.youtube.com/vi/' + id + '/hqdefault.jpg';
     }
-
-    function buildMedia(item) {
-      var thumb = getVideoThumbnail(item);
-      if (item.cover) {
-        var poster = thumb ? ' poster="' + thumb + '"' : '';
-        return '<video autoplay loop muted playsinline' + poster + '><source src="' + item.cover + '" type="video/mp4"></video>';
-      }
-      if (item.coverImage) {
-        return '<img src="' + item.coverImage + '" alt="' + item.title + '" loading="lazy">';
-      }
-      if (thumb) {
-        return '<img src="' + thumb + '" alt="' + item.title + '" loading="lazy">';
-      }
-      return '<div class="placeholder"><span class="item-label">' + item.title + '</span></div>';
+    if (item.type === 'vimeo') {
+      var id = item.video.split('/video/')[1];
+      return 'https://vumbnail.com/' + id + '.jpg';
     }
+    return null;
+  }
 
-    function renderGrid(items, category) {
-      var grid = document.getElementById('grid');
-      grid.innerHTML = '';
-      items.forEach(function(item) {
-        var a = document.createElement('a');
-        a.href = '/portfolio/' + item.slug;
-        a.className = 'portfolio-item';
-        a.innerHTML = buildMedia(item) + '<div class="overlay"><div class="item-title">' + item.title + '</div><div class="item-category">' + category + '</div></div>';
-        grid.appendChild(a);
-      });
+  function buildMedia(item) {
+    if (item.cover) {
+      var poster = item.coverImage ? ' poster="' + item.coverImage + '"' : '';
+      return '<video autoplay loop muted playsinline' + poster + '><source src="' + item.cover + '" type="video/mp4"></video>';
     }
+    if (item.coverImage) {
+      return '<img src="' + item.coverImage + '" alt="' + item.title + '" loading="lazy">';
+    }
+    var thumb = getVideoThumbnail(item);
+    if (thumb) {
+      return '<img src="' + thumb + '" alt="' + item.title + '" loading="lazy">';
+    }
+    return '<div class="placeholder"><span class="item-label">' + item.title + '</span></div>';
+  }
+  function renderGrid(items, category) {
+    var grid = document.getElementById('grid');
+    grid.innerHTML = '';
+    items.forEach(function(item) {
+      var a = document.createElement('a');
+      a.href = '/portfolio/' + item.slug;
+      a.className = 'portfolio-item';
+      a.innerHTML = buildMedia(item) + '<div class="overlay"><div class="item-title">' + item.title + '</div><div class="item-category">' + category + '</div></div>';
+      grid.appendChild(a);
+    });
+  }
 
-    renderGrid(PORTFOLIO.musicVideo, 'Music Video');
+  renderGrid(PORTFOLIO.musicVideo, 'Music Video');
 
-    // Fallback: if cover videos haven't loaded after 6 seconds, replace with poster/thumbnail
-    setTimeout(function() {
-      document.querySelectorAll('.portfolio-item video').forEach(function(v) {
-        if (v.readyState < 2) {
-          var poster = v.getAttribute('poster');
-          if (poster) {
-            var img = document.createElement('img');
-            img.src = poster;
-            img.alt = '';
-            img.loading = 'lazy';
-            v.parentNode.replaceChild(img, v);
-          }
+  // Fallback: if cover videos haven't loaded after 6 seconds, replace with poster/thumbnail
+  setTimeout(function() {
+    document.querySelectorAll('.portfolio-item video').forEach(function(v) {
+      if (v.readyState < 2) {
+        var poster = v.getAttribute('poster');
+        if (poster) {
+          var img = document.createElement('img');
+          img.src = poster;
+          img.alt = '';
+          img.loading = 'lazy';
+          v.parentNode.replaceChild(img, v);
         }
-      });
-    }, 6000);
-  </script>
+      }
+    });
+  }, 6000);
+</script>
 </body>
 </html>
