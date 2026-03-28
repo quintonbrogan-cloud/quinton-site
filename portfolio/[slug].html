@@ -1,1 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quinton Brogan</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a href="/" class="site-logo">
+      <div class="name">Quinton Brogan</div>
+      <div class="title">Director of Photography</div>
+    </a>
+    <nav class="site-nav">
+      <a href="/" class="active" data-page="commercial">Commercial</a>
+      <a href="/music-video" data-page="music-video">Music Video</a>
+      <a href="/docu" data-page="doc">Doc</a>
+      <a href="/equipment" data-page="equipment">Equipment</a>
+      <a href="/about" data-page="about">About</a>
+    </nav>
+    <button class="hamburger" onclick="document.querySelector('.mobile-nav').classList.add('open')">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
 
+  <div class="mobile-nav">
+    <button class="close-btn" onclick="this.parentElement.classList.remove('open')">&times;</button>
+    <a href="/">Commercial</a>
+    <a href="/music-video">Music Video</a>
+    <a href="/docu">Doc</a>
+    <a href="/equipment">Equipment</a>
+    <a href="/about">About</a>
+  </div>
+
+  <main>
+    <div class="portfolio-detail" id="detail"></div>
+  </main>
+  <footer class="site-footer">
+    <div class="footer-name"><a href="/">Quinton Brogan</a></div>
+    <div class="footer-bio">Quinton Brogan is an IATSE Local 600 DP living in New England</div>
+    <div class="footer-social">
+      <a href="https://www.instagram.com/quintonbrogan/" target="_blank" rel="noopener" aria-label="Instagram">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+      </a>
+    </div>
+    <div class="footer-copyright">&copy;2026 Quinton Brogan. All rights reserved. No part of this website may be reproduced without permission.</div>
+  </footer>
+  <script src="/data.js"></script>
+  <script>
+    const slug = window.location.pathname.split('/portfolio/')[1];
+    const allItems = [...PORTFOLIO.commercial, ...PORTFOLIO.musicVideo, ...PORTFOLIO.doc];
+    const item = allItems.find(p => p.slug === slug);
+
+    if (item) {
+      document.title = `${item.title} - Quinton Brogan`;
+      const categoryMap = {};
+      PORTFOLIO.commercial.forEach(p => categoryMap[p.slug] = { name: 'Commercial', href: '/' });
+      PORTFOLIO.musicVideo.forEach(p => categoryMap[p.slug] = { name: 'Music Video', href: '/music-video' });
+      PORTFOLIO.doc.forEach(p => categoryMap[p.slug] = { name: 'Doc', href: '/docu' });
+      const cat = categoryMap[slug] || { name: 'Commercial', href: '/' };
+
+      let embedUrl = item.video;
+      if (item.type === 'youtube') embedUrl += '?autoplay=0&rel=0';
+      if (item.type === 'vimeo') embedUrl += '?title=0&byline=0&portrait=0';
+      if (item.type === 'wistia') embedUrl += '?autoPlay=false';
+
+      document.getElementById('detail').innerHTML = `
+        <div class="video-container">
+          <iframe src="${embedUrl}" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <h1>${item.title}</h1>
+        <a href="${cat.href}" class="category-link">${cat.name}</a>
+      `;
+    }
+  </script>
+</body>
+</html>
