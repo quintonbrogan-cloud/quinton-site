@@ -35,16 +35,16 @@ const PORTFOLIO = {
     { slug: "nuvance-health", title: "Nuvance Health", video: "https://fast.wistia.net/embed/iframe/4q7vpfc9e7", type: "wistia", coverImage: "https://static.fabrik.io/1nve/1372bafa2b09faf7.png?lossless=1&w=720&fit=crop&ar=16:9&crop=faces%2Centropy&s=5d51f18f793ee707c3c293dce8acf870" }
   ],
   musicVideo: [
-    { slug: "sierra-spirit-ghost-official-music-video", title: "Sierra Spirit - ghost (Official Music Video)", video: "https://www.youtube.com/embed/FIBOxj25jaE", type: "youtube" },
-    { slug: "spittn-chiclets", title: "Spittn' Chiclets", video: "https://www.youtube.com/embed/pBGodH4bx3Y", type: "youtube" },
-    { slug: "dead-emerson-eleventh-hour", title: "Dead Emerson - Eleventh Hour", video: "https://www.youtube.com/embed/Yxu_84QCbkA", type: "youtube" },
-    { slug: "karma-a-will-away", title: "Karma - A Will Away", video: "https://www.youtube.com/embed/s5g-DCxmX20", type: "youtube" },
-    { slug: "des-rocks-imaginary-friends", title: "Des Rocks - Imaginary Friends", video: "https://www.youtube.com/embed/BhRvU9IqQpU", type: "youtube" },
-    { slug: "mitchel-dae-innocent-live", title: "Mitchel Dae -Innocent live", video: "https://www.youtube.com/embed/HkgAchzbrHY", type: "youtube" }
+    { slug: "sierra-spirit-ghost-official-music-video", title: "Sierra Spirit - ghost (Official Music Video)", video: "https://www.youtube.com/embed/FIBOxj25jaE", type: "youtube" , coverImage: "https://static.fabrik.io/1nve/c88820a3100b5baa.jpg?lossless=1&w=720&fit=crop&ar=16:9&crop=faces%2Centropy&s=f0a63a4f08e0c95f712bd6394ac58229"},
+    { slug: "spittn-chiclets", title: "Spittn' Chiclets", video: "https://www.youtube.com/embed/pBGodH4bx3Y", type: "youtube" , coverImage: "https://static.fabrik.io/1nve/e3fb966806579721.jpeg?lossless=1&w=720&fit=crop&ar=16:9&crop=faces%2Centropy&s=0d02cee7b85955cb408a56bd36d36d05"},
+    { slug: "dead-emerson-eleventh-hour", title: "Dead Emerson - Eleventh Hour", video: "https://www.youtube.com/embed/Yxu_84QCbkA", type: "youtube" , cover: "https://blob.fabrik.io/1nve/247d2c461672c38d.mp4"},
+    { slug: "karma-a-will-away", title: "Karma - A Will Away", video: "https://www.youtube.com/embed/s5g-DCxmX20", type: "youtube" , cover: "https://blob.fabrik.io/1nve/45f154c8b0826eeb.mp4"},
+    { slug: "des-rocks-imaginary-friends", title: "Des Rocks - Imaginary Friends", video: "https://www.youtube.com/embed/BhRvU9IqQpU", type: "youtube" , coverImage: "https://static.fabrik.io/1nve/f64e20ca6a3a5b4a.png?lossless=1&w=720&fit=crop&ar=16:9&crop=faces%2Centropy&s=faedc70252f1dfba898918d2ecf45969"},
+    { slug: "mitchel-dae-innocent-live", title: "Mitchel Dae -Innocent live", video: "https://www.youtube.com/embed/HkgAchzbrHY", type: "youtube" , coverImage: "https://static.fabrik.io/1nve/b910a891e18c6675.png?lossless=1&w=720&fit=crop&ar=16:9&crop=faces%2Centropy&s=5432b0f146915039e8a56ad52815fa48"}
   ],
   doc: [
-    { slug: "chris-brickley-x-red-bull", title: "Chris Brickley x Red Bull", video: "https://player.vimeo.com/video/372786655", type: "vimeo" },
-    { slug: "new-tribe-rising", title: "New Tribe Rising", video: "https://player.vimeo.com/video/286334354", type: "vimeo" },
-    { slug: "discover-the-tuscan-olive-trees-growing-in-california", title: "Discover the Tuscan Olive Trees Growing in California", video: "https://www.youtube.com/embed/dDVbwwbh05A", type: "youtube" }
+    { slug: "chris-brickley-x-red-bull", title: "Chris Brickley x Red Bull", video: "https://player.vimeo.com/video/372786655", type: "vimeo" , coverImage: "https://static.fabrik.io/1nve/7d09df8f94f1d722.png?lossless=1&w=720&fit=crop&ar=16:9&crop=faces%2Centropy&s=23db24183d2ed41377c9e8e2342d1f95"},
+    { slug: "new-tribe-rising", title: "New Tribe Rising", video: "https://player.vimeo.com/video/286334354", type: "vimeo" , coverImage: "https://static.fabrik.io/1nve/a32923fe8a1546f3.png?lossless=1&w=720&fit=crop&ar=16:9&crop=faces%2Centropy&s=2a7d2c7ee6bc503b5d46060078f1aaee"},
+    { slug: "discover-the-tuscan-olive-trees-growing-in-california", title: "Discover the Tuscan Olive Trees Growing in California", video: "https://www.youtube.com/embed/dDVbwwbh05A", type: "youtube" , coverImage: "https://static.fabrik.io/1nve/4f05cb9f3362e5a4.png?lossless=1&w=720&fit=crop&ar=16:9&crop=faces%2Centropy&s=ec6fede8172633fbabfd3323ee317917"}
   ]
 };
