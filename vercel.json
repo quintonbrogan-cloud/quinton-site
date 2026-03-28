@@ -1,12 +1,28 @@
 {
-    "rewrites": [
-          { "source": "/music-video", "destination": "/music-video.html" },
-          { "source": "/docu", "destination": "/docu.html" },
-          { "source": "/commercial", "destination": "/index.html" },
-          { "source": "/equipment", "destination": "/equipment.html" },
-          { "source": "/about", "destination": "/about.html" },
-          { "source": "/pages/equipment", "destination": "/equipment.html" },
-          { "source": "/pages/about", "destination": "/about.html" },
-          { "source": "/portfolio/:slug", "destination": "/portfolio/[slug].html" }
-    ]
+  "rewrites": [
+    {
+      "source": "/commercial",
+      "destination": "/commercial.html"
+    },
+    {
+      "source": "/music-video",
+      "destination": "/music-video.html"
+    },
+    {
+      "source": "/docu",
+      "destination": "/docu.html"
+    },
+    {
+      "source": "/equipment",
+      "destination": "/equipment.html"
+    },
+    {
+      "source": "/about",
+      "destination": "/about.html"
+    },
+    {
+      "source": "/portfolio/:slug",
+      "destination": "/portfolio.html"
+    }
+  ]
 }
