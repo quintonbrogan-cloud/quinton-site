@@ -25,7 +25,7 @@ const PORTFOLIO = {
     { slug: "spittn-chiclets", title: "Spittn Chiclets", video: "https://www.youtube.com/embed/pBGodH4bx3Y", type: "youtube", size: "S", coverImage: "https://img.youtube.com/vi/pBGodH4bx3Y/maxresdefault.jpg" },
     { slug: "dead-emerson-eleventh-hour", title: "Dead Emerson - Eleventh Hour", video: "https://www.youtube.com/embed/Yxu_84QCbkA", type: "youtube", size: "S", cover: "https://blob.fabrik.io/1nve/247d2c461672c38d.mp4", coverImage: "https://img.youtube.com/vi/Yxu_84QCbkA/maxresdefault.jpg" },
     { slug: "karma-a-will-away", title: "Karma - A Will Away", video: "https://www.youtube.com/embed/s5g-DCxmX20", type: "youtube", size: "S", cover: "https://blob.fabrik.io/1nve/45f154c8b0826eeb.mp4", coverImage: "https://img.youtube.com/vi/s5g-DCxmX20/maxresdefault.jpg" },
-    { slug: "des-rocks-imaginary-friends", title: "Des Rocks - Imaginary Friends", video: "https://www.youtube.com/embed/BhRvU9IqQpU", type: "youtube", size: "S", coverImage: "https://img.youtube.com/vi/BhRvU9IqQpU/maxresdefault.jpg" },
+    { slug: "des-rocks-imaginary-friends", title: "Des Rocks - Imaginary Friends", video: "https://www.youtube.com/embed/BhRvU9IqQpU", type: "youtube", size: "S", coverImage: "https://img.youtube.com/vi/BhRvU9IqQpU/hqdefault.jpg" },
     { slug: "mitchel-dae-innocent-live", title: "Mitchel Dae - Innocent live", video: "https://www.youtube.com/embed/HkgAchzbrHY", type: "youtube", size: "S", coverImage: "https://img.youtube.com/vi/HkgAchzbrHY/maxresdefault.jpg" }
   ],
   doc: [
