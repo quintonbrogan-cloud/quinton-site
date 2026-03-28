@@ -18,7 +18,7 @@ const PORTFOLIO = {
     { slug: "defy-the-odds", title: "Defy The Odds", video: "https://player.vimeo.com/video/667398721", type: "vimeo", size: "S", cover: "https://blob.fabrik.io/1nve/e9b5b69f912006d1.mp4", coverImage: "https://vumbnail.com/667398721.jpg" },
     { slug: "brave-girl-embrace-grace", title: "Brave Girl Embrace Grace", video: "https://player.vimeo.com/video/861404679", type: "vimeo", size: "S", coverImage: "https://vumbnail.com/861404679.jpg" },
     { slug: "aaa", title: "AAA", video: "https://player.vimeo.com/video/639342583", type: "vimeo", size: "L", coverImage: "https://vumbnail.com/639342583.jpg" },
-    { slug: "marshalls-activewear-15s", title: "Marshalls Activewear 15s", video: "https://player.vimeo.com/video/867277742", type: "vimeo", size: "L", coverImage: "https://vumbnail.com/867277742.jpg" }
+    { slug: "marshalls-activewear-15s", title: "Marshalls Activewear 15s", video: "https://player.vimeo.com/video/867277742", type: "vimeo", size: "L", coverImage: "https://static.fabrik.io/1nve/a1750e96d95ffea3.png?lossless=1&w=720&fit=crop&ar=16:9&crop=faces%2Centropy&s=96c40a3e4e4be7b6cb4afc4f5890fe77" }
   ],
   musicVideo: [
     { slug: "sierra-spirit-ghost-official-music-video", title: "Sierra Spirit - ghost (Official Music Video)", video: "https://www.youtube.com/embed/FIBOxj25jaE", type: "youtube", size: "S", coverImage: "https://img.youtube.com/vi/FIBOxj25jaE/maxresdefault.jpg" },
@@ -30,7 +30,7 @@ const PORTFOLIO = {
   ],
   doc: [
     { slug: "chris-brickley-x-red-bull", title: "Chris Brickley x Red Bull", video: "https://player.vimeo.com/video/372786655", type: "vimeo", size: "S", coverImage: "https://vumbnail.com/372786655.jpg" },
-    { slug: "new-tribe-rising", title: "New Tribe Rising", video: "https://player.vimeo.com/video/286334354", type: "vimeo", size: "S", coverImage: "https://vumbnail.com/286334354.jpg" },
+    { slug: "new-tribe-rising", title: "New Tribe Rising", video: "https://player.vimeo.com/video/286334354", type: "vimeo", size: "S", coverImage: "https://static.fabrik.io/1nve/a32923fe8a1546f3.png?lossless=1&w=720&fit=crop&ar=16:9&crop=faces%2Centropy&s=2a7d2c7ee6bc503b5d46060078f1aaee" },
     { slug: "discover-the-tuscan-olive-trees-growing-in-california", title: "Discover the Tuscan Olive Trees Growing in California", video: "https://www.youtube.com/embed/dDVbwwbh05A", type: "youtube", size: "S", coverImage: "https://img.youtube.com/vi/dDVbwwbh05A/maxresdefault.jpg" }
   ]
 };
