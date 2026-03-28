@@ -65,9 +65,12 @@
     function buildMedia(item) {
       var thumb = getVideoThumbnail(item);
       if (item.cover) {
-        var poster = thumb ? ' poster="' + thumb + '"' : '';
-        return '<video autoplay loop muted playsinline' + poster + '><source src="' + item.cover + '" type="video/mp4"></video>';
+              var poster = item.coverImage ? ' poster="' + item.coverImage + '"' : '';
+        return '<video autoplay loop muted playsinline' + hposter + '><source src="' + item.cover + '" type="video/mp4"></video>';
       }
+            if (item.coverImage) {
+        return '<img src="' + item.coverImage + '" alt="' + item.title + '" loading="lazy">';
+            }
       if (thumb) {
         return '<img src="' + thumb + '" alt="' + item.title + '" loading="lazy">';
       }
