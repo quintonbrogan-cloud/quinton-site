@@ -1,24 +1,28 @@
 {
-    "rewrites": [
-          {
-                  "source": "/commercial",
-                  "destination": "/commercial.html"
-          },
-          {
-                  "source": "/music-video",
-                  "destination": "/music-video.html"
-          },
-          {
-                  "source": "/docu",
-                  "destination": "/docu.html"
-          },
-          {
-                  "source": "/equipment",
-                  "destination": "/equipment.html"
-          },
-          {
-                  "source": "/about",
-                  "destination": "/about.html"
-          }
-    ]
+  "rewrites": [
+    {
+      "source": "/portfolio/:slug",
+      "destination": "/portfolio/[slug].html"
+    },
+    {
+      "source": "/commercial",
+      "destination": "/commercial.html"
+    },
+    {
+      "source": "/music-video",
+      "destination": "/music-video.html"
+    },
+    {
+      "source": "/docu",
+      "destination": "/docu.html"
+    },
+    {
+      "source": "/equipment",
+      "destination": "/equipment.html"
+    },
+    {
+      "source": "/about",
+      "destination": "/about.html"
+    }
+  ]
 }
