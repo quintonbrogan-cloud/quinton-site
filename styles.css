@@ -175,9 +175,9 @@ a { color: inherit; text-decoration: none; }
 
 /* Portfolio Detail */
 .portfolio-detail {
-  max-width: 90%;
+  max-width: 1000px;
   margin: 0 auto;
-  padding: 0 0 60px;
+  padding: 0 32px 60px;
 }
 
 .video-container {
