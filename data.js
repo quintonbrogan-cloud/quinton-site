@@ -8,7 +8,7 @@ const PORTFOLIO = {
     { slug: "delloitte-brand-film", title: "Delloitte Brand Film", video: "https://fast.wistia.net/embed/iframe/rihr0ex733", type: "wistia", cover: "/covers/delloitte-brand-film.webm" },
     { slug: "country-crock", title: "Country Crock", video: "https://player.vimeo.com/video/696812977", type: "vimeo", cover: "/covers/country-crock.webm" },
     { slug: "dietz-and-watson", title: "Dietz and Watson", video: "https://player.vimeo.com/video/630572467", type: "vimeo", cover: "/covers/dietz-and-watson.webm" },
-    { slug: "best-buy-mess-up", title: "Best Buy - Mess Up", video: "https://fast.wistia.net/embed/iframe/fbggvtws70", type: "wistia", coverImage: "" },
+    { slug: "best-buy-mess-up", title: "Best Buy - Mess Up", video: "https://fast.wistia.net/embed/iframe/fbggvtws70", type: "wistia", coverImage: "/covers/best-buy-mess-up.jpg" },
     { slug: "get-there-florida-education", title: "Get There - Florida Education", video: "https://player.vimeo.com/video/617113397", type: "vimeo", cover: "/covers/get-there-florida-education.webm" },
     { slug: "microsoft-edge-holiday", title: "Microsoft Edge Holiday", video: "https://fast.wistia.net/embed/iframe/vp6voe2xso", type: "wistia", cover: "/covers/microsoft-edge-holiday.webm" },
     { slug: "ryerson-insurance", title: "Ryerson Insurance", video: "https://player.vimeo.com/video/639725079", type: "vimeo", cover: "/covers/ryerson-insurance.webm" },
@@ -17,13 +17,13 @@ const PORTFOLIO = {
     { slug: "defy-the-odds", title: "Defy The Odds", video: "https://player.vimeo.com/video/667398721", type: "vimeo", cover: "/covers/defy-the-odds.webm" },
     { slug: "brave-girl-embrace-grace", title: "'Brave Girl' Embrace Grace", video: "https://player.vimeo.com/video/861404679", type: "vimeo", coverImage: "" },
     { slug: "aaa", title: "AAA", video: "https://player.vimeo.com/video/639342583", type: "vimeo", coverImage: "" },
-    { slug: "marshalls-activewear-15s", title: "Marshalls \"Activewear\" 15s", video: "https://player.vimeo.com/video/867277742", type: "vimeo", coverImage: "" },
+    { slug: "marshalls-activewear-15s", title: "Marshalls \"Activewear\" 15s", video: "https://player.vimeo.com/video/867277742", type: "vimeo", coverImage: "/covers/marshalls-activewear-15s.jpg" },
     { slug: "top-golf", title: "Top Golf", video: "https://player.vimeo.com/video/738006171", type: "vimeo", cover: "/covers/top-golf.webm" },
     { slug: "hammerhead", title: "Hammerhead", video: "https://player.vimeo.com/video/454148137", type: "vimeo", coverImage: "" },
     { slug: "rba-the-light-stays-on", title: "RBA - The Light Stays On", video: "https://player.vimeo.com/video/708017846", type: "vimeo", coverImage: "" },
     { slug: "middlesex-hospital", title: "Middlesex Hospital", video: "https://player.vimeo.com/video/680629442", type: "vimeo", cover: "/covers/middlesex-hospital.webm" },
     { slug: "vans-heaven", title: "Vans - Heaven", video: "https://www.youtube.com/embed/_2e9hdyEomI", type: "youtube", cover: "/covers/vans-heaven.webm" },
-    { slug: "peerspace", title: "Peerspace", video: "https://player.vimeo.com/video/1036602916", type: "vimeo", coverImage: "" },
+    { slug: "peerspace", title: "Peerspace", video: "https://player.vimeo.com/video/1036602916", type: "vimeo", coverImage: "/covers/peerspace.jpg" },
     { slug: "middlesex-health-the-boat", title: "Middlesex Health - The Boat", video: "https://player.vimeo.com/video/884897404", type: "vimeo", cover: "/covers/middlesex-health-the-boat.webm" },
     { slug: "ucare-diana", title: "UCare - Diana", video: "https://player.vimeo.com/video/884861251", type: "vimeo", cover: "/covers/ucare-diana.webm" },
     { slug: "wawa", title: "WAWA", video: "https://player.vimeo.com/video/1072106602", type: "vimeo", cover: "/covers/wawa.webm" },
@@ -32,7 +32,7 @@ const PORTFOLIO = {
     { slug: "keurig", title: "Keurig", video: "https://fast.wistia.net/embed/iframe/craqv82le1", type: "wistia", cover: "/covers/keurig.webm" },
     { slug: "aaa-seriously-golf", title: "AAA Seriously - Golf", video: "https://player.vimeo.com/video/630160010", type: "vimeo", coverImage: "" },
     { slug: "hartford-athletic", title: "Hartford Athletic - Soccer City", video: "https://player.vimeo.com/video/304629666", type: "vimeo", coverImage: "" },
-    { slug: "discover-the-tuscan-olive-trees-growing-in-california", title: "Discover the Tuscan Olive Trees Growing in California", video: "https://www.youtube.com/embed/dDVbwwbh05A", type: "youtube", coverImage: "" }
+    { slug: "discover-the-tuscan-olive-trees-growing-in-california", title: "Discover the Tuscan Olive Trees Growing in California", video: "https://www.youtube.com/embed/dDVbwwbh05A", type: "youtube", coverImage: "/covers/discover-the-tuscan-olive-trees-growing-in-california.jpg" }
   ],
   musicVideo: [
     { slug: "sierra-spirit-ghost-official-music-video", title: "Sierra Spirit - ghost (Official Music Video)", video: "https://www.youtube.com/embed/FIBOxj25jaE", type: "youtube" , coverImage: ""},
@@ -44,7 +44,7 @@ const PORTFOLIO = {
   ],
   doc: [
     { slug: "chris-brickley-x-red-bull", title: "Chris Brickley x Red Bull", video: "https://player.vimeo.com/video/372786655", type: "vimeo" , coverImage: ""},
-    { slug: "new-tribe-rising", title: "New Tribe Rising", video: "https://player.vimeo.com/video/286334354", type: "vimeo" , coverImage: ""},
-    { slug: "discover-the-tuscan-olive-trees-growing-in-california", title: "Discover the Tuscan Olive Trees Growing in California", video: "https://www.youtube.com/embed/dDVbwwbh05A", type: "youtube" , coverImage: ""}
+    { slug: "new-tribe-rising", title: "New Tribe Rising", video: "https://player.vimeo.com/video/286334354", type: "vimeo" , coverImage: "/covers/new-tribe-rising.jpg"},
+    { slug: "discover-the-tuscan-olive-trees-growing-in-california", title: "Discover the Tuscan Olive Trees Growing in California", video: "https://www.youtube.com/embed/dDVbwwbh05A", type: "youtube" , coverImage: "/covers/discover-the-tuscan-olive-trees-growing-in-california.jpg"}
   ]
 };
