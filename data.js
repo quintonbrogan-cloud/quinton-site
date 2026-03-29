@@ -48,3 +48,14 @@ const PORTFOLIO = {
     { slug: "discover-the-tuscan-olive-trees-growing-in-california", title: "Discover the Tuscan Olive Trees Growing in California", video: "https://www.youtube.com/embed/dDVbwwbh05A", type: "youtube" , coverImage: "https://static.fabrik.io/1nve/4f05cb9f3362e5a4.png?lossless=1&w=720&fit=crop&ar=16:9&crop=faces%2Centropy&s=ec6fede8172633fbabfd3323ee317917"}
   ]
 };
+
+// Clean broken Fabrik CDN URLs - fall back to YouTube/Vimeo thumbnails
+(function() {
+  var arrays = [PORTFOLIO.commercial, PORTFOLIO.musicVideo, PORTFOLIO.doc];
+  arrays.forEach(function(arr) {
+    arr.forEach(function(item) {
+      if (item.coverImage && item.coverImage.indexOf('fabrik.io') !== -1) { item.coverImage = ''; }
+      if (item.cover && item.cover.indexOf('fabrik.io') !== -1) { item.cover = ''; }
+    });
+  });
+})();
