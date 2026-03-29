@@ -1,61 +1,50 @@
 const PORTFOLIO = {
   commercial: [
-    { slug: "shokz-directors-cut", title: "Shokz (directors cut)", video: "https://www.youtube.com/embed/7nTOkXUMWZY", type: "youtube", cover: "https://blob.fabrik.io/1nve/cd780aac4726db29.mp4" },
-    { slug: "asco-sound-of-progress", title: "ASCO - Sound of Progress", video: "https://player.vimeo.com/video/710483743", type: "vimeo", cover: "https://blob.fabrik.io/1nve/49f084dff7b7aa33.mp4" },
-    { slug: "best-buy", title: "Best Buy", video: "https://fast.wistia.net/embed/iframe/pv6df2jktj", type: "wistia", cover: "https://blob.fabrik.io/1nve/b582f8d048f28fa7.mp4" },
-    { slug: "pga2k-nsw2", title: "PGA2K- Tiger", video: "https://player.vimeo.com/video/1150499022", type: "vimeo", cover: "https://blob.fabrik.io/1nve/8e769097a5af0289.mp4" },
-    { slug: "connecticut-lottery-keno-yeah", title: "CONNECTICUT LOTTERY KENO YEAH", video: "https://player.vimeo.com/video/1013596748", type: "vimeo", cover: "https://blob.fabrik.io/1nve/fae720946cd76abc.mp4" },
-    { slug: "delloitte-brand-film", title: "Delloitte Brand Film", video: "https://fast.wistia.net/embed/iframe/rihr0ex733", type: "wistia", cover: "https://blob.fabrik.io/1nve/48c8642a7b6783e5.mp4" },
-    { slug: "country-crock", title: "Country Crock", video: "https://player.vimeo.com/video/696812977", type: "vimeo", cover: "https://blob.fabrik.io/1nve/8dd4d179239628da.mp4" },
-    { slug: "dietz-and-watson", title: "Dietz and Watson", video: "https://player.vimeo.com/video/630572467", type: "vimeo", cover: "https://blob.fabrik.io/1nve/6ce3d1fbe00e3c8e.mp4" },
-    { slug: "best-buy-mess-up", title: "Best Buy - Mess Up", video: "https://fast.wistia.net/embed/iframe/fbggvtws70", type: "wistia", coverImage: "https://static.fabrik.io/1nve/9bbb5b5ec7074aec.png?lossless=1&w=720&fit=crop&ar=16:9&crop=faces%2Centropy&s=568273bfea3f2a08d1782813e2b89458" },
-    { slug: "get-there-florida-education", title: "Get There - Florida Education", video: "https://player.vimeo.com/video/617113397", type: "vimeo", cover: "https://blob.fabrik.io/1nve/9b19ce6eff71158b.mp4" },
-    { slug: "microsoft-edge-holiday", title: "Microsoft Edge Holiday", video: "https://fast.wistia.net/embed/iframe/vp6voe2xso", type: "wistia", cover: "https://blob.fabrik.io/1nve/61f9c5949ee6b760.mp4" },
-    { slug: "ryerson-insurance", title: "Ryerson Insurance", video: "https://player.vimeo.com/video/639725079", type: "vimeo", cover: "https://blob.fabrik.io/1nve/fdfde0afafcd3e17.mp4" },
-    { slug: "spinbrush", title: "Spinbrush", video: "https://fast.wistia.net/embed/iframe/d5ww5vfasl", type: "wistia", cover: "https://blob.fabrik.io/1nve/12bb8cdacb8d5fc9.mp4" },
-    { slug: "sherlock-homes", title: "Sherlock Homes", video: "https://www.youtube.com/embed/dRBpizr3PCM", type: "youtube", cover: "https://blob.fabrik.io/1nve/d41e78290774298d.mp4" },
-    { slug: "defy-the-odds", title: "Defy The Odds", video: "https://player.vimeo.com/video/667398721", type: "vimeo", cover: "https://blob.fabrik.io/1nve/e9b5b69f912006d1.mp4" },
-    { slug: "brave-girl-embrace-grace", title: "'Brave Girl' Embrace Grace", video: "https://player.vimeo.com/video/861404679", type: "vimeo", coverImage: "https://static.fabrik.io/1nve/752b53702191b8bd.jpg?lossless=1&w=720&fit=crop&ar=16:9&crop=faces%2Centropy&s=6aee173032a5dcdad1c8fb8da7cd60af" },
-    { slug: "aaa", title: "AAA", video: "https://player.vimeo.com/video/639342583", type: "vimeo", coverImage: "https://static.fabrik.io/1nve/39759613a54a6871.jpeg?lossless=1&w=720&fit=crop&ar=16:9&crop=faces%2Centropy&s=695e38a2583e5620954e19ee2e2c850d" },
-    { slug: "marshalls-activewear-15s", title: "Marshalls \"Activewear\" 15s", video: "https://player.vimeo.com/video/867277742", type: "vimeo", coverImage: "https://static.fabrik.io/1nve/a1750e96d95ffea3.png?lossless=1&w=720&fit=crop&ar=16:9&crop=faces%2Centropy&s=96c40a3e4e4be7b6cb4afc4f5890fe77" },
-    { slug: "top-golf", title: "Top Golf", video: "https://player.vimeo.com/video/738006171", type: "vimeo", cover: "https://blob.fabrik.io/1nve/8f6613765c453a54.mp4" },
-    { slug: "hammerhead", title: "Hammerhead", video: "https://player.vimeo.com/video/454148137", type: "vimeo", coverImage: "https://static.fabrik.io/1nve/5df4b3b6dbe9c1f0.png?lossless=1&w=720&fit=crop&ar=16:9&crop=faces%2Centropy&s=b26201827e303b53d4ca1cacadbed20f" },
-    { slug: "rba-the-light-stays-on", title: "RBA - The Light Stays On", video: "https://player.vimeo.com/video/708017846", type: "vimeo", coverImage: "https://static.fabrik.io/1nve/b62413c83d4e10da.jpg?lossless=1&w=720&fit=crop&ar=16:9&crop=faces%2Centropy&s=ca86a368fd6e6e83580ea75dc6f5801f" },
-    { slug: "middlesex-hospital", title: "Middlesex Hospital", video: "https://player.vimeo.com/video/680629442", type: "vimeo", cover: "https://blob.fabrik.io/1nve/b744d3976b5b564d.mp4" },
-    { slug: "vans-heaven", title: "Vans - Heaven", video: "https://www.youtube.com/embed/_2e9hdyEomI", type: "youtube", cover: "https://blob.fabrik.io/1nve/725d74886d7eb9dc.mp4" },
-    { slug: "peerspace", title: "Peerspace", video: "https://player.vimeo.com/video/1036602916", type: "vimeo", coverImage: "https://static.fabrik.io/1nve/e69eaf22385bb399.png?lossless=1&w=720&fit=crop&ar=16:9&crop=faces%2Centropy&s=7634786cb380986edea1eb0b234b631c" },
-    { slug: "middlesex-health-the-boat", title: "Middlesex Health - The Boat", video: "https://player.vimeo.com/video/884897404", type: "vimeo", cover: "https://blob.fabrik.io/1nve/6e05a58571a4d231.mp4" },
-    { slug: "ucare-diana", title: "UCare - Diana", video: "https://player.vimeo.com/video/884861251", type: "vimeo", cover: "https://blob.fabrik.io/1nve/a734d6efd0d57e5d.mp4" },
-    { slug: "wawa", title: "WAWA", video: "https://player.vimeo.com/video/1072106602", type: "vimeo", cover: "https://blob.fabrik.io/1nve/e813abaef0912630.mp4" },
-    { slug: "dr-sheffields", title: "Dr. Sheffields", video: "https://player.vimeo.com/video/349157045", type: "vimeo", cover: "https://blob.fabrik.io/1nve/4e60472a759cf3f7.mp4" },
-    { slug: "jeep", title: "Jeep", video: "https://player.vimeo.com/video/373308699", type: "vimeo", cover: "https://blob.fabrik.io/1nve/ace8bf75ab862938.mp4" },
-    { slug: "keurig", title: "Keurig", video: "https://fast.wistia.net/embed/iframe/craqv82le1", type: "wistia", cover: "https://blob.fabrik.io/1nve/3af7acd235844574.mp4" },
-    { slug: "aaa-seriously-golf", title: "AAA Seriously - Golf", video: "https://player.vimeo.com/video/630160010", type: "vimeo", coverImage: "https://static.fabrik.io/1nve/f01bc8b127d15e58.jpg?lossless=1&w=720&fit=crop&ar=16:9&crop=faces%2Centropy&s=d772e7b7cb6033465ccb9a613be761b9" },
-    { slug: "hartford-athletic", title: "Hartford Athletic - Soccer City", video: "https://player.vimeo.com/video/304629666", type: "vimeo", coverImage: "https://static.fabrik.io/1nve/9321d2e6930d2e49.png?lossless=1&w=720&fit=crop&ar=16:9&crop=faces%2Centropy&s=92b49ee2642c6d4440d14bdc9360a82d" },
-    { slug: "discover-the-tuscan-olive-trees-growing-in-california", title: "Discover the Tuscan Olive Trees Growing in California", video: "https://www.youtube.com/embed/dDVbwwbh05A", type: "youtube", coverImage: "https://static.fabrik.io/1nve/4f05cb9f3362e5a4.png?lossless=1&w=720&fit=crop&ar=16:9&crop=faces%2Centropy&s=ec6fede8172633fbabfd3323ee317917" }
+    { slug: "shokz-directors-cut", title: "Shokz (directors cut)", video: "https://www.youtube.com/embed/7nTOkXUMWZY", type: "youtube", cover: "/covers/shokz-directors-cut.mp4" },
+    { slug: "asco-sound-of-progress", title: "ASCO - Sound of Progress", video: "https://player.vimeo.com/video/710483743", type: "vimeo", cover: "/covers/asco-sound-of-progress.mp4" },
+    { slug: "best-buy", title: "Best Buy", video: "https://fast.wistia.net/embed/iframe/pv6df2jktj", type: "wistia", cover: "/covers/best-buy.mp4" },
+    { slug: "pga2k-nsw2", title: "PGA2K- Tiger", video: "https://player.vimeo.com/video/1150499022", type: "vimeo", cover: "/covers/pga2k-nsw2.mp4" },
+    { slug: "connecticut-lottery-keno-yeah", title: "CONNECTICUT LOTTERY KENO YEAH", video: "https://player.vimeo.com/video/1013596748", type: "vimeo", cover: "/covers/connecticut-lottery-keno-yeah.mp4" },
+    { slug: "delloitte-brand-film", title: "Delloitte Brand Film", video: "https://fast.wistia.net/embed/iframe/rihr0ex733", type: "wistia", cover: "/covers/delloitte-brand-film.mp4" },
+    { slug: "country-crock", title: "Country Crock", video: "https://player.vimeo.com/video/696812977", type: "vimeo", cover: "/covers/country-crock.mp4" },
+    { slug: "dietz-and-watson", title: "Dietz and Watson", video: "https://player.vimeo.com/video/630572467", type: "vimeo", cover: "/covers/dietz-and-watson.mp4" },
+    { slug: "best-buy-mess-up", title: "Best Buy - Mess Up", video: "https://fast.wistia.net/embed/iframe/fbggvtws70", type: "wistia", coverImage: "" },
+    { slug: "get-there-florida-education", title: "Get There - Florida Education", video: "https://player.vimeo.com/video/617113397", type: "vimeo", cover: "/covers/get-there-florida-education.mp4" },
+    { slug: "microsoft-edge-holiday", title: "Microsoft Edge Holiday", video: "https://fast.wistia.net/embed/iframe/vp6voe2xso", type: "wistia", cover: "/covers/microsoft-edge-holiday.mp4" },
+    { slug: "ryerson-insurance", title: "Ryerson Insurance", video: "https://player.vimeo.com/video/639725079", type: "vimeo", cover: "/covers/ryerson-insurance.mp4" },
+    { slug: "spinbrush", title: "Spinbrush", video: "https://fast.wistia.net/embed/iframe/d5ww5vfasl", type: "wistia", cover: "/covers/spinbrush.mp4" },
+    { slug: "sherlock-homes", title: "Sherlock Homes", video: "https://www.youtube.com/embed/dRBpizr3PCM", type: "youtube", cover: "/covers/sherlock-homes.mp4" },
+    { slug: "defy-the-odds", title: "Defy The Odds", video: "https://player.vimeo.com/video/667398721", type: "vimeo", cover: "/covers/defy-the-odds.mp4" },
+    { slug: "brave-girl-embrace-grace", title: "'Brave Girl' Embrace Grace", video: "https://player.vimeo.com/video/861404679", type: "vimeo", coverImage: "" },
+    { slug: "aaa", title: "AAA", video: "https://player.vimeo.com/video/639342583", type: "vimeo", coverImage: "" },
+    { slug: "marshalls-activewear-15s", title: "Marshalls \"Activewear\" 15s", video: "https://player.vimeo.com/video/867277742", type: "vimeo", coverImage: "" },
+    { slug: "top-golf", title: "Top Golf", video: "https://player.vimeo.com/video/738006171", type: "vimeo", cover: "/covers/top-golf.mp4" },
+    { slug: "hammerhead", title: "Hammerhead", video: "https://player.vimeo.com/video/454148137", type: "vimeo", coverImage: "" },
+    { slug: "rba-the-light-stays-on", title: "RBA - The Light Stays On", video: "https://player.vimeo.com/video/708017846", type: "vimeo", coverImage: "" },
+    { slug: "middlesex-hospital", title: "Middlesex Hospital", video: "https://player.vimeo.com/video/680629442", type: "vimeo", cover: "/covers/middlesex-hospital.mp4" },
+    { slug: "vans-heaven", title: "Vans - Heaven", video: "https://www.youtube.com/embed/_2e9hdyEomI", type: "youtube", cover: "/covers/vans-heaven.mp4" },
+    { slug: "peerspace", title: "Peerspace", video: "https://player.vimeo.com/video/1036602916", type: "vimeo", coverImage: "" },
+    { slug: "middlesex-health-the-boat", title: "Middlesex Health - The Boat", video: "https://player.vimeo.com/video/884897404", type: "vimeo", cover: "/covers/middlesex-health-the-boat.mp4" },
+    { slug: "ucare-diana", title: "UCare - Diana", video: "https://player.vimeo.com/video/884861251", type: "vimeo", cover: "/covers/ucare-diana.mp4" },
+    { slug: "wawa", title: "WAWA", video: "https://player.vimeo.com/video/1072106602", type: "vimeo", cover: "/covers/wawa.mp4" },
+    { slug: "dr-sheffields", title: "Dr. Sheffields", video: "https://player.vimeo.com/video/349157045", type: "vimeo", cover: "/covers/dr-sheffields.mp4" },
+    { slug: "jeep", title: "Jeep", video: "https://player.vimeo.com/video/373308699", type: "vimeo", cover: "/covers/jeep.mp4" },
+    { slug: "keurig", title: "Keurig", video: "https://fast.wistia.net/embed/iframe/craqv82le1", type: "wistia", cover: "/covers/keurig.mp4" },
+    { slug: "aaa-seriously-golf", title: "AAA Seriously - Golf", video: "https://player.vimeo.com/video/630160010", type: "vimeo", coverImage: "" },
+    { slug: "hartford-athletic", title: "Hartford Athletic - Soccer City", video: "https://player.vimeo.com/video/304629666", type: "vimeo", coverImage: "" },
+    { slug: "discover-the-tuscan-olive-trees-growing-in-california", title: "Discover the Tuscan Olive Trees Growing in California", video: "https://www.youtube.com/embed/dDVbwwbh05A", type: "youtube", coverImage: "" }
   ],
   musicVideo: [
-    { slug: "sierra-spirit-ghost-official-music-video", title: "Sierra Spirit - ghost (Official Music Video)", video: "https://www.youtube.com/embed/FIBOxj25jaE", type: "youtube" , coverImage: "https://static.fabrik.io/1nve/c88820a3100b5baa.jpg?lossless=1&w=720&fit=crop&ar=16:9&crop=faces%2Centropy&s=f0a63a4f08e0c95f712bd6394ac58229"},
-    { slug: "spittn-chiclets", title: "Spittn' Chiclets", video: "https://www.youtube.com/embed/pBGodH4bx3Y", type: "youtube" , coverImage: "https://static.fabrik.io/1nve/e3fb966806579721.jpeg?lossless=1&w=720&fit=crop&ar=16:9&crop=faces%2Centropy&s=0d02cee7b85955cb408a56bd36d36d05"},
-    { slug: "dead-emerson-eleventh-hour", title: "Dead Emerson - Eleventh Hour", video: "https://www.youtube.com/embed/Yxu_84QCbkA", type: "youtube" , cover: "https://blob.fabrik.io/1nve/247d2c461672c38d.mp4"},
-    { slug: "karma-a-will-away", title: "Karma - A Will Away", video: "https://www.youtube.com/embed/s5g-DCxmX20", type: "youtube" , cover: "https://blob.fabrik.io/1nve/45f154c8b0826eeb.mp4"},
-    { slug: "des-rocks-imaginary-friends", title: "Des Rocks - Imaginary Friends", video: "https://www.youtube.com/embed/BhRvU9IqQpU", type: "youtube" , coverImage: "https://static.fabrik.io/1nve/f64e20ca6a3a5b4a.png?lossless=1&w=720&fit=crop&ar=16:9&crop=faces%2Centropy&s=faedc70252f1dfba898918d2ecf45969"},
-    { slug: "mitchel-dae-innocent-live", title: "Mitchel Dae -Innocent live", video: "https://www.youtube.com/embed/HkgAchzbrHY", type: "youtube" , coverImage: "https://static.fabrik.io/1nve/b910a891e18c6675.png?lossless=1&w=720&fit=crop&ar=16:9&crop=faces%2Centropy&s=5432b0f146915039e8a56ad52815fa48"}
+    { slug: "sierra-spirit-ghost-official-music-video", title: "Sierra Spirit - ghost (Official Music Video)", video: "https://www.youtube.com/embed/FIBOxj25jaE", type: "youtube" , coverImage: ""},
+    { slug: "spittn-chiclets", title: "Spittn' Chiclets", video: "https://www.youtube.com/embed/pBGodH4bx3Y", type: "youtube" , coverImage: ""},
+    { slug: "dead-emerson-eleventh-hour", title: "Dead Emerson - Eleventh Hour", video: "https://www.youtube.com/embed/Yxu_84QCbkA", type: "youtube" , cover: "/covers/dead-emerson-eleventh-hour.mp4"},
+    { slug: "karma-a-will-away", title: "Karma - A Will Away", video: "https://www.youtube.com/embed/s5g-DCxmX20", type: "youtube" , cover: "/covers/karma-a-will-away.mp4"},
+    { slug: "des-rocks-imaginary-friends", title: "Des Rocks - Imaginary Friends", video: "https://www.youtube.com/embed/BhRvU9IqQpU", type: "youtube" , coverImage: ""},
+    { slug: "mitchel-dae-innocent-live", title: "Mitchel Dae -Innocent live", video: "https://www.youtube.com/embed/HkgAchzbrHY", type: "youtube" , coverImage: ""}
   ],
   doc: [
-    { slug: "chris-brickley-x-red-bull", title: "Chris Brickley x Red Bull", video: "https://player.vimeo.com/video/372786655", type: "vimeo" , coverImage: "https://static.fabrik.io/1nve/7d09df8f94f1d722.png?lossless=1&w=720&fit=crop&ar=16:9&crop=faces%2Centropy&s=23db24183d2ed41377c9e8e2342d1f95"},
-    { slug: "new-tribe-rising", title: "New Tribe Rising", video: "https://player.vimeo.com/video/286334354", type: "vimeo" , coverImage: "https://static.fabrik.io/1nve/a32923fe8a1546f3.png?lossless=1&w=720&fit=crop&ar=16:9&crop=faces%2Centropy&s=2a7d2c7ee6bc503b5d46060078f1aaee"},
-    { slug: "discover-the-tuscan-olive-trees-growing-in-california", title: "Discover the Tuscan Olive Trees Growing in California", video: "https://www.youtube.com/embed/dDVbwwbh05A", type: "youtube" , coverImage: "https://static.fabrik.io/1nve/4f05cb9f3362e5a4.png?lossless=1&w=720&fit=crop&ar=16:9&crop=faces%2Centropy&s=ec6fede8172633fbabfd3323ee317917"}
+    { slug: "chris-brickley-x-red-bull", title: "Chris Brickley x Red Bull", video: "https://player.vimeo.com/video/372786655", type: "vimeo" , coverImage: ""},
+    { slug: "new-tribe-rising", title: "New Tribe Rising", video: "https://player.vimeo.com/video/286334354", type: "vimeo" , coverImage: ""},
+    { slug: "discover-the-tuscan-olive-trees-growing-in-california", title: "Discover the Tuscan Olive Trees Growing in California", video: "https://www.youtube.com/embed/dDVbwwbh05A", type: "youtube" , coverImage: ""}
   ]
 };
-
-// Clean broken Fabrik CDN URLs - fall back to YouTube/Vimeo thumbnails
-(function() {
-  var arrays = [PORTFOLIO.commercial, PORTFOLIO.musicVideo, PORTFOLIO.doc];
-  arrays.forEach(function(arr) {
-    arr.forEach(function(item) {
-      if (item.coverImage && item.coverImage.indexOf('fabrik.io') !== -1) { item.coverImage = ''; }
-      if (item.cover && item.cover.indexOf('fabrik.io') !== -1) { item.cover = ''; }
-    });
-  });
-})();
