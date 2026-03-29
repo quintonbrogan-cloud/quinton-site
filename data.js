@@ -31,7 +31,7 @@ const PORTFOLIO = {
     { slug: "jeep", title: "Jeep", video: "https://player.vimeo.com/video/373308699", type: "vimeo", cover: "/covers/jeep.webm" },
     { slug: "keurig", title: "Keurig", video: "https://fast.wistia.net/embed/iframe/craqv82le1", type: "wistia", cover: "/covers/keurig.webm" },
     { slug: "aaa-seriously-golf", title: "AAA Seriously - Golf", video: "https://player.vimeo.com/video/630160010", type: "vimeo", coverImage: "" },
-    { slug: "hartford-athletic", title: "Hartford Athletic - Soccer City", video: "https://player.vimeo.com/video/304629666", type: "vimeo", coverImage: "" },
+    { slug: "hartford-athletic", title: "Hartford Athletic - Soccer City", video: "https://player.vimeo.com/video/304629666", type: "vimeo", coverImage: "/covers/hartford-athletic.jpg" },
     { slug: "discover-the-tuscan-olive-trees-growing-in-california", title: "Discover the Tuscan Olive Trees Growing in California", video: "https://www.youtube.com/embed/dDVbwwbh05A", type: "youtube", coverImage: "/covers/discover-the-tuscan-olive-trees-growing-in-california.jpg" }
   ],
   musicVideo: [
