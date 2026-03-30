@@ -34,3 +34,20 @@ const PORTFOLIO = {
     { slug: "hartford-athletic", title: "Hartford Athletic - Soccer City", video: "https://player.vimeo.com/video/304629666", type: "vimeo", coverImage: "/covers/hartford-athletic.jpg" },
     { slug: "hartford-hospital", title: "Hartford Hospital", video: "https://player.vimeo.com/video/909166695", type: "vimeo", cover: "/covers/middlesex-hospital.webm" },
     { slug: "discover-the-tuscan-olive-trees-growing-in-california", title: "Discover the Tuscan Olive Trees Growing in California", video: "https://www.youtube.com/embed/dDVbwwbh05A", type: "youtube", coverImage: "/covers/discover-the-tuscan-olive-trees-growing-in-california.jpg" }
+  ],
+
+  musicVideo: [
+    { slug: "sierra-spirit-ghost-official-music-video", title: "Sierra Spirit - ghost (Official Music Video)", video: "https://www.youtube.com/embed/FIBOxj25jaE", type: "youtube", coverImage: "" },
+    { slug: "spittn-chiclets", title: "Spittn' Chiclets", video: "https://www.youtube.com/embed/pBGodH4bx3Y", type: "youtube", coverImage: "" },
+    { slug: "dead-emerson-eleventh-hour", title: "Dead Emerson - Eleventh Hour", video: "https://www.youtube.com/embed/Yxu_84QCbkA", type: "youtube", cover: "/covers/dead-emerson-eleventh-hour.webm" },
+    { slug: "karma-a-will-away", title: "Karma - A Will Away", video: "https://www.youtube.com/embed/s5g-DCxmX20", type: "youtube", cover: "/covers/karma-a-will-away.webm" },
+    { slug: "des-rocks-imaginary-friends", title: "Des Rocks - Imaginary Friends", video: "https://www.youtube.com/embed/BhRvU9IqQpU", type: "youtube", coverImage: "" },
+    { slug: "mitchel-dae-innocent-live", title: "Mitchel Dae -Innocent live", video: "https://www.youtube.com/embed/HkgAchzbrHY", type: "youtube", coverImage: "" }
+  ],
+
+  doc: [
+    { slug: "chris-brickley-x-red-bull", title: "Chris Brickley x Red Bull", video: "https://player.vimeo.com/video/372786655", type: "vimeo", cover: "/covers/chris-brickley-x-red-bull.webm" },
+    { slug: "new-tribe-rising", title: "New Tribe Rising", video: "https://player.vimeo.com/video/286334354", type: "vimeo", coverImage: "/covers/new-tribe-rising.jpg" },
+    { slug: "discover-the-tuscan-olive-trees-growing-in-california", title: "Discover the Tuscan Olive Trees Growing in California", video: "https://www.youtube.com/embed/dDVbwwbh05A", type: "youtube", coverImage: "/covers/discover-the-tuscan-olive-trees-growing-in-california.jpg" }
+  ]
+};
