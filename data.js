@@ -21,7 +21,7 @@ const PORTFOLIO = {
     { slug: "top-golf", title: "Top Golf", video: "https://player.vimeo.com/video/738006171", type: "vimeo", cover: "/covers/top-golf.webm" },
     { slug: "hammerhead", title: "Hammerhead", video: "https://player.vimeo.com/video/454148137", type: "vimeo", coverImage: "" },
     { slug: "rba-the-light-stays-on", title: "RBA - The Light Stays On", video: "https://player.vimeo.com/video/708017846", type: "vimeo", coverImage: "" },
-    { slug: "middlesex-hospital", title: "Middlesex Hospital", video: "https://player.vimeo.com/video/680629442", type: "vimeo", cover: "/covers/maple.webm" },
+    { slug: "middlesex-hospital", title: "Middlesex Hospital", video: "https://player.vimeo.com/video/680629442", type: "vimeo", cover: "/covers/maple.mp4" },
     { slug: "vans-heaven", title: "Vans - Heaven", video: "https://www.youtube.com/embed/_2e9hdyEomI", type: "youtube", cover: "/covers/vans-heaven.webm" },
     { slug: "peerspace", title: "Peerspace", video: "https://player.vimeo.com/video/1036602916", type: "vimeo", coverImage: "/covers/peerspace.jpg" },
     { slug: "middlesex-health-the-boat", title: "Middlesex Health - The Boat", video: "https://player.vimeo.com/video/884897404", type: "vimeo", cover: "/covers/middlesex-health-the-boat.webm" },
@@ -34,4 +34,3 @@ const PORTFOLIO = {
     { slug: "hartford-athletic", title: "Hartford Athletic - Soccer City", video: "https://player.vimeo.com/video/304629666", type: "vimeo", coverImage: "/covers/hartford-athletic.jpg" },
     { slug: "hartford-hospital", title: "Hartford Hospital", video: "https://player.vimeo.com/video/909166695", type: "vimeo", cover: "/covers/middlesex-hospital.webm" },
     { slug: "discover-the-tuscan-olive-trees-growing-in-california", title: "Discover the Tuscan Olive Trees Growing in California", video: "https://www.youtube.com/embed/dDVbwwbh05A", type: "youtube", coverImage: "/covers/discover-the-tuscan-olive-trees-growing-in-california.jpg" }
-  ],
