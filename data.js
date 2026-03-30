@@ -3,7 +3,7 @@ const PORTFOLIO = {
     { slug: "shokz-directors-cut", title: "Shokz (directors cut)", video: "https://www.youtube.com/embed/7nTOkXUMWZY", type: "youtube", cover: "/covers/shokz-directors-cut.webm" },
     { slug: "asco-sound-of-progress", title: "ASCO - Sound of Progress", video: "https://player.vimeo.com/video/710483743", type: "vimeo", cover: "/covers/asco-sound-of-progress.webm" },
     { slug: "best-buy", title: "Best Buy", video: "https://fast.wistia.net/embed/iframe/pv6df2jktj", type: "wistia", cover: "/covers/best-buy.webm" },
-    { slug: "pga2k-nsw2", title: "PGA2K- Tiger", video: "https://player.vimeo.com/video/1h150499022", type: "vimeo", cover: "/covers/pga2k-nsw2.webm" },
+    { slug: "pga2k-nsw2", title: "PGA2K- Tiger", video: "https://player.vimeo.com/video/1150499022", type: "vimeo", cover: "/covers/pga2k-nsw2.webm" },
     { slug: "delloitte-brand-film", title: "Delloitte Brand Film", video: "https://fast.wistia.net/embed/iframe/rihr0ex733", type: "wistia", cover: "/covers/delloitte-brand-film.webm" },
     { slug: "connecticut-lottery-keno-yeah", title: "CONNECTICUT LOTTERY KENO YEAH", video: "https://player.vimeo.com/video/1013596748", type: "vimeo", cover: "/covers/connecticut-lottery-keno-yeah.webm" },
     { slug: "country-crock", title: "Country Crock", video: "https://player.vimeo.com/video/696812977", type: "vimeo", cover: "/covers/country-crock.webm" },
@@ -34,17 +34,3 @@ const PORTFOLIO = {
     { slug: "hartford-athletic", title: "Hartford Athletic - Soccer City", video: "https://player.vimeo.com/video/304629666", type: "vimeo", coverImage: "/covers/hartford-athletic.jpg" },
     { slug: "discover-the-tuscan-olive-trees-growing-in-california", title: "Discover the Tuscan Olive Trees Growing in California", video: "https://www.youtube.com/embed/dDVbwwbh05A", type: "youtube", coverImage: "/covers/discover-the-tuscan-olive-trees-growing-in-california.jpg" }
   ],
-  musicVideo: [
-    { slug: "sierra-spirit-ghost-official-music-video", title: "Sierra Spirit - ghost (Official Music Video)", video: "https://www.youtube.com/embed/FIBOxj25jaE", type: "youtube" , coverImage: ""},
-    { slug: "spittn-chiclets", title: "Spittn' Chiclets", video: "https://www.youtube.com/embed/pBGodH4bx3Y", type: "youtube" , coverImage: ""},
-    { slug: "dead-emerson-eleventh-hour", title: "Dead Emerson - Eleventh Hour", video: "https://www.youtube.com/embed/Yxu_84QCbkA", type: "youtube" , cover: "/covers/dead-emerson-eleventh-hour.webm"},
-    { slug: "karma-a-will-away", title: "Karma - A Will Away", video: "https://www.youtube.com/embed/s5g-DCxmX20", type: "youtube" , cover: "/covers/karma-a-will-away.webm"},
-    { slug: "des-rocks-imaginary-friends", title: "Des Rocks - Imaginary Friends", video: "https://www.youtube.com/embed/BhRvU9IqQpU", type: "youtube" , coverImage: ""},
-    { slug: "mitchel-dae-innocent-live", title: "Mitchel Dae -Innocent live", video: "https://www.youtube.com/embed/HkgAchzbrHY", type: "youtube" , coverImage: ""}
-  ],
-  doc: [
-    { slug: "chris-brickley-x-red-bull", title: "Chris Brickley x Red Bull", video: "https://player.vimeo.com/video/372786655", type: "vimeo" , coverImage: ""},
-    { slug: "new-tribe-rising", title: "New Tribe Rising", video: "https://player.vimeo.com/video/286334354", type: "vimeo" , coverImage: "/covers/new-tribe-rising.jpg"},
-    { slug: "discover-the-tuscan-olive-trees-growing-in-california", title: "Discover the Tuscan Olive Trees Growing in California", video: "https://www.youtube.com/embed/dDVbwwbh05A", type: "youtube" , coverImage: "/covers/discover-the-tuscan-olive-trees-growing-in-california.jpg"}
-  ]
-};
