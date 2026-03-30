@@ -490,6 +490,14 @@ a { color: inherit; text-decoration: none; }
   font-size: 11px;
   color: #aaa;
 }
+/* Widen video player on detail pages only */
+.portfolio-detail .video-container {
+    width: 90vw;
+    max-width: 1400px;
+    margin-left: calc(-45vw + 50%);
+    margin-right: calc(-45vw + 50%);
+}
+
 
 /* Responsive */
 @media (max-width: 768px) {
