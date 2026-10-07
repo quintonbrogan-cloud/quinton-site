@@ -1,6 +1,9 @@
 const PORTFOLIO = {
   commercial: [
     { slug: "shokz-directors-cut", title: "Shokz (directors cut)", video: "https://www.youtube.com/embed/7nTOkXUMWZY", type: "youtube", cover: "/covers/shokz-directors-cut.webm" },
+    { slug: "vape-free-wake-up", title: "Vape Free - Wake Up", video: "https://player.vimeo.com/video/1222157583", type: "vimeo", cover: "/covers/vape-free-wake-up.webm" },
+    { slug: "vape-free-chemikills", title: "Vape Free - Chemikills", video: "https://player.vimeo.com/video/1222157584", type: "vimeo", cover: "/covers/vape-free-chemikills.webm" },
+    { slug: "panasonic-the-cutting-edge", title: "Panasonic - The Cutting Edge", video: "https://player.vimeo.com/video/1214894230", type: "vimeo", cover: "/covers/panasonic-the-cutting-edge.webm" },
     { slug: "asco-sound-of-progress", title: "ASCO - Sound of Progress", video: "https://player.vimeo.com/video/710483743", type: "vimeo", cover: "/covers/asco-sound-of-progress.webm" },
     { slug: "best-buy", title: "Best Buy", video: "https://fast.wistia.net/embed/iframe/pv6df2jktj", type: "wistia", cover: "/covers/best-buy.webm" },
     { slug: "pga2k-nsw2", title: "PGA2K- Tiger", video: "https://player.vimeo.com/video/1150499022", type: "vimeo", cover: "/covers/pga2k-nsw2.webm" },
