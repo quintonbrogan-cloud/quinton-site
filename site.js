@@ -110,7 +110,7 @@ function renderHome() {
     PORTFOLIO[c[0]].forEach(function (p) { if (p.showHome) items.push(Object.assign({ cat: c[1] }, p)); });
   });
 
-  var hero = document.getElementById('hero'), heroItems = items.filter(function (p) { return p.cover; }).slice(0, 6), hv = [], cur = 0;
+  var hero = document.getElementById('hero'), heroItems = items.filter(function (p) { return p.hero; }), hv = [], cur = 0;
   heroItems.forEach(function (p, k) { var v = coverVideo(p.hero || p.cover, k === 0); if (k === 0) v.classList.add('on'); hero.prepend(v); hv.push(v); });
   function setNow() { var p = heroItems[cur]; document.getElementById('now').innerHTML = 'Now playing: <a href="/portfolio/' + p.slug + '">' + p.title + '</a>'; }
   if (hv.length) {
