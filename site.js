@@ -111,16 +111,18 @@ function renderHome() {
   });
 
   var hero = document.getElementById('hero'), heroItems = items.filter(function (p) { return p.cover; }).slice(0, 6), hv = [], cur = 0;
-  heroItems.forEach(function (p, k) { var v = coverVideo(p.cover, k === 0); if (k === 0) v.classList.add('on'); hero.prepend(v); hv.push(v); });
+  heroItems.forEach(function (p, k) { var v = coverVideo(p.hero || p.cover, k === 0); if (k === 0) v.classList.add('on'); hero.prepend(v); hv.push(v); });
   function setNow() { var p = heroItems[cur]; document.getElementById('now').innerHTML = 'Now playing: <a href="/portfolio/' + p.slug + '">' + p.title + '</a>'; }
   if (hv.length) {
     setNow();
+    setTimeout(function () { if (hv[1] && !hv[1].src) hv[1].src = heroItems[1].hero || heroItems[1].cover; }, 3000);
     setInterval(function () {
       if (document.hidden) return;
       var nxt = (cur + 1) % hv.length;
-      if (!hv[nxt].src) hv[nxt].src = heroItems[nxt].cover;
+      if (!hv[nxt].src) hv[nxt].src = heroItems[nxt].hero || heroItems[nxt].cover;
       hv[nxt].currentTime = 0; safePlay(hv[nxt]);
       hv[nxt].classList.add('on'); hv[cur].classList.remove('on'); cur = nxt; setNow();
+      var n2 = (cur + 1) % hv.length; if (!hv[n2].src) hv[n2].src = heroItems[n2].hero || heroItems[n2].cover;
     }, 7000);
   }
 
