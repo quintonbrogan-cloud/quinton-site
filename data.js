@@ -51,7 +51,7 @@ const PORTFOLIO = {
   ],
 
   doc: [
-    { slug: "chris-brickley-x-red-bull", title: "Chris Brickley x Red Bull", video: "https://player.vimeo.com/video/372786655", type: "vimeo", cover: "/covers/chris-brickley-x-red-bull.webm" },
+    { slug: "chris-brickley-x-red-bull", title: "Chris Brickley x Red Bull", video: "https://player.vimeo.com/video/372786655", type: "vimeo", cover: "/covers/chris-brickley-x-red-bull.webm", showHome: true },
     { slug: "new-tribe-rising", title: "New Tribe Rising", video: "https://player.vimeo.com/video/286334354", type: "vimeo", coverImage: "/covers/new-tribe-rising.jpg" },
     { slug: "discover-the-tuscan-olive-trees-growing-in-california", title: "Discover the Tuscan Olive Trees Growing in California", video: "https://www.youtube.com/embed/dDVbwwbh05A", type: "youtube", coverImage: "/covers/discover-the-tuscan-olive-trees-growing-in-california.jpg" }
   ]

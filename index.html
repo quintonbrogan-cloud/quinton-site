@@ -93,13 +93,13 @@
             var large = document.createElement('a');
             large.href = '/portfolio/' + items[i].slug;
             large.className = 'portfolio-item item-large-left';
-            large.innerHTML = buildMedia(items[i]) + '<div class="overlay"><div class="item-title">' + items[i].title + '</div><div class="item-category">' + category + '</div></div>';
+            large.innerHTML = buildMedia(items[i]) + '<div class="overlay"><div class="item-title">' + items[i].title + '</div><div class="item-category">' + (items[i].homeLabel || category) + '</div></div>';
             grid.appendChild(large);
             for (var j = 1; j <= 2; j++) {
               var small = document.createElement('a');
               small.href = '/portfolio/' + items[i+j].slug;
               small.className = 'portfolio-item item-small-right';
-              small.innerHTML = buildMedia(items[i+j]) + '<div class="overlay"><div class="item-title">' + items[i+j].title + '</div><div class="item-category">' + category + '</div></div>';
+              small.innerHTML = buildMedia(items[i+j]) + '<div class="overlay"><div class="item-title">' + items[i+j].title + '</div><div class="item-category">' + (items[i+j].homeLabel || category) + '</div></div>';
               grid.appendChild(small);
             }
             i += 3;
@@ -108,7 +108,7 @@
               var el = document.createElement('a');
               el.href = '/portfolio/' + items[i+k].slug;
               el.className = 'portfolio-item';
-              el.innerHTML = buildMedia(items[i+k]) + '<div class="overlay"><div class="item-title">' + items[i+k].title + '</div><div class="item-category">' + category + '</div></div>';
+              el.innerHTML = buildMedia(items[i+k]) + '<div class="overlay"><div class="item-title">' + items[i+k].title + '</div><div class="item-category">' + (items[i+k].homeLabel || category) + '</div></div>';
               grid.appendChild(el);
             }
             i += remaining;
@@ -120,13 +120,13 @@
               var small = document.createElement('a');
               small.href = '/portfolio/' + items[i+j].slug;
               small.className = 'portfolio-item item-small-left';
-              small.innerHTML = buildMedia(items[i+j]) + '<div class="overlay"><div class="item-title">' + items[i+j].title + '</div><div class="item-category">' + category + '</div></div>';
+              small.innerHTML = buildMedia(items[i+j]) + '<div class="overlay"><div class="item-title">' + items[i+j].title + '</div><div class="item-category">' + (items[i+j].homeLabel || category) + '</div></div>';
               grid.appendChild(small);
             }
             var large = document.createElement('a');
             large.href = '/portfolio/' + items[i+2].slug;
             large.className = 'portfolio-item item-large-right';
-            large.innerHTML = buildMedia(items[i+2]) + '<div class="overlay"><div class="item-title">' + items[i+2].title + '</div><div class="item-category">' + category + '</div></div>';
+            large.innerHTML = buildMedia(items[i+2]) + '<div class="overlay"><div class="item-title">' + items[i+2].title + '</div><div class="item-category">' + (items[i+2].homeLabel || category) + '</div></div>';
             grid.appendChild(large);
             i += 3;
           } else {
@@ -134,7 +134,7 @@
               var el = document.createElement('a');
               el.href = '/portfolio/' + items[i+k].slug;
               el.className = 'portfolio-item';
-              el.innerHTML = buildMedia(items[i+k]) + '<div class="overlay"><div class="item-title">' + items[i+k].title + '</div><div class="item-category">' + category + '</div></div>';
+              el.innerHTML = buildMedia(items[i+k]) + '<div class="overlay"><div class="item-title">' + items[i+k].title + '</div><div class="item-category">' + (items[i+k].homeLabel || category) + '</div></div>';
               grid.appendChild(el);
             }
             i += remaining;
@@ -169,7 +169,11 @@
       }
     }
 
-    renderMixedGrid(PORTFOLIO.commercial.filter(function(p) { return !p.hideHome; }), 'Commercial');
+    var homeItems = PORTFOLIO.commercial.filter(function(p) { return !p.hideHome; });
+    [['musicVideo', 'Music Video'], ['doc', 'Doc']].forEach(function(c) {
+      PORTFOLIO[c[0]].forEach(function(p) { if (p.showHome) homeItems.push(Object.assign({}, p, { homeLabel: c[1] })); });
+    });
+    renderMixedGrid(homeItems, 'Commercial');
   </script>
 </body>
 </html>
