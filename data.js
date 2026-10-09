@@ -1,7 +1,7 @@
 const PORTFOLIO = {
   commercial: [
     { slug: "shokz-directors-cut", title: "Shokz (directors cut)", video: "https://www.youtube.com/embed/7nTOkXUMWZY", type: "youtube", cover: "/covers/shokz-directors-cut.webm", hero: "/hero/shokz-directors-cut.webm" },
-    { slug: "bumble-bee-line-troye-sivan", title: "Bumble - Bee Line ft. Troye Sivan", video: "https://www.youtube.com/embed/r9uFpYJ38o0", type: "youtube", cover: "/covers/bumble-bee-line-troye-sivan.webm", hero: "/hero/bumble-bee-line-troye-sivan.webm" },
+    { slug: "bumble-bee-line-troye-sivan", title: "Bumble - Bee Line ft. Troye Sivan", video: "https://www.youtube.com/embed/r9uFpYJ38o0", type: "youtube", cover: "/covers/bumble-bee-line-troye-sivan.webm?v=2", hero: "/hero/bumble-bee-line-troye-sivan.webm" },
     { slug: "vape-free-wake-up", title: "Vape Free - Wake Up", video: "https://player.vimeo.com/video/1222157583", type: "vimeo", cover: "/covers/vape-free-wake-up.webm", hero: "/hero/vape-free-wake-up.webm" },
     { slug: "vape-free-chemikills", title: "Vape Free - Chemikills", video: "https://player.vimeo.com/video/1222157584", type: "vimeo", cover: "/covers/vape-free-chemikills.webm", hero: "/hero/vape-free-chemikills.webm" },
     { slug: "panasonic-the-cutting-edge", title: "Panasonic - The Cutting Edge", video: "https://player.vimeo.com/video/1214894230", type: "vimeo", cover: "/covers/panasonic-the-cutting-edge.webm", foodBev: true, hero: "/hero/panasonic-the-cutting-edge.webm" },
