@@ -36,7 +36,7 @@ const PORTFOLIO = {
     { slug: "aaa-seriously-golf", title: "AAA Seriously - Golf", video: "https://player.vimeo.com/video/630160010", type: "vimeo", coverImage: "" },
     { slug: "hartford-athletic", title: "Hartford Athletic - Soccer City", video: "https://player.vimeo.com/video/304629666", type: "vimeo", coverImage: "/covers/hartford-athletic.jpg" },
     { slug: "hartford-hospital", title: "Hartford Hospital", video: "https://player.vimeo.com/video/909166695", type: "vimeo", cover: "/covers/middlesex-hospital.webm" },
-    { slug: "discover-the-tuscan-olive-trees-growing-in-california", title: "Discover the Tuscan Olive Trees Growing in California", video: "https://www.youtube.com/embed/dDVbwwbh05A", type: "youtube", coverImage: "/covers/discover-the-tuscan-olive-trees-growing-in-california.jpg" },
+    { slug: "discover-the-tuscan-olive-trees-growing-in-california", title: "Mitsubishi x Atlas Obscura", video: "https://www.youtube.com/embed/dDVbwwbh05A", type: "youtube", coverImage: "/covers/discover-the-tuscan-olive-trees-growing-in-california.jpg" },
     { slug: "hartford-healthcare-turn-to-us", title: "Hartford Healthcare - Turn to Us", video: "https://player.vimeo.com/video/1053154383", type: "vimeo", cover: "/covers/hartford-healthcare-turn-to-us.webm", hideHome: true },
     { slug: "hartford-healthcare-top-team", title: "Hartford Healthcare - Top Team", video: "https://player.vimeo.com/video/912257303", type: "vimeo", cover: "/covers/hartford-healthcare-top-team.webm", hideHome: true }
   ],
@@ -53,6 +53,6 @@ const PORTFOLIO = {
   doc: [
     { slug: "chris-brickley-x-red-bull", title: "Chris Brickley x Red Bull", video: "https://player.vimeo.com/video/372786655", type: "vimeo", cover: "/covers/chris-brickley-x-red-bull.webm?v=2", showHome: true },
     { slug: "new-tribe-rising", title: "New Tribe Rising", video: "https://player.vimeo.com/video/286334354", type: "vimeo", coverImage: "/covers/new-tribe-rising.jpg" },
-    { slug: "discover-the-tuscan-olive-trees-growing-in-california", title: "Discover the Tuscan Olive Trees Growing in California", video: "https://www.youtube.com/embed/dDVbwwbh05A", type: "youtube", coverImage: "/covers/discover-the-tuscan-olive-trees-growing-in-california.jpg" }
+    { slug: "discover-the-tuscan-olive-trees-growing-in-california", title: "Mitsubishi x Atlas Obscura", video: "https://www.youtube.com/embed/dDVbwwbh05A", type: "youtube", coverImage: "/covers/discover-the-tuscan-olive-trees-growing-in-california.jpg" }
   ]
 };
