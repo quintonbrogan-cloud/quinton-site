@@ -169,7 +169,7 @@
       }
     }
 
-    renderMixedGrid(PORTFOLIO.commercial, 'Commercial');
+    renderMixedGrid(PORTFOLIO.commercial.filter(function(p) { return !p.hideHome; }), 'Commercial');
   </script>
 </body>
 </html>
