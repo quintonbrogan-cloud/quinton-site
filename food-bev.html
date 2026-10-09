@@ -3,10 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Music Video - Quinton Brogan</title>
+  <title>Food / Bev - Quinton Brogan</title>
   <link rel="stylesheet" href="/styles.css">
 </head>
 <body>
+
   <header class="site-header">
     <a href="/" class="site-logo">
       <div class="name">Quinton Brogan</div>
@@ -14,8 +15,8 @@
     </a>
     <nav class="site-nav">
       <a href="/commercial">Commercial</a>
-      <a href="/food-bev">Food / Bev</a>
-      <a href="/music-video" class="active">Music Video</a>
+      <a href="/food-bev" class="active">Food / Bev</a>
+      <a href="/music-video">Music Video</a>
       <a href="/docu">Doc</a>
       <a href="/equipment">Equipment</a>
       <a href="/about">About</a>
@@ -24,6 +25,7 @@
       <span></span><span></span><span></span>
     </button>
   </header>
+
   <div class="mobile-nav">
     <button class="close-btn" onclick="this.parentElement.classList.remove('open')">&times;</button>
     <a href="/commercial">Commercial</a>
@@ -33,9 +35,11 @@
     <a href="/equipment">Equipment</a>
     <a href="/about">About</a>
   </div>
+
   <main>
     <div class="portfolio-grid grid-4col" id="grid"></div>
   </main>
+
   <footer class="site-footer">
     <div class="footer-name"><a href="/">Quinton Brogan</a></div>
     <div class="footer-bio">Quinton Brogan is a Director of Photography living in New England</div>
@@ -46,6 +50,7 @@
     </div>
     <div class="footer-copyright">&copy;2026 Quinton Brogan. All rights reserved. No part of this website may be reproduced without permission.</div>
   </footer>
+
   <script src="/data.js"></script>
   <script>
     function getVideoThumbnail(item) {
@@ -112,7 +117,7 @@
       }
     }
 
-    renderGrid(PORTFOLIO.musicVideo, 'Music Video');
+    renderGrid(PORTFOLIO.commercial.filter(function(p) { return p.foodBev; }), 'Food / Bev');
   </script>
 </body>
-</html>
+                                  </html>

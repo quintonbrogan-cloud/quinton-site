@@ -9,6 +9,10 @@
       "destination": "/commercial.html"
     },
     {
+      "source": "/food-bev",
+      "destination": "/food-bev.html"
+    },
+    {
       "source": "/music-video",
       "destination": "/music-video.html"
     },
