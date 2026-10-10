@@ -7,7 +7,7 @@ var SECTIONS = [
 ];
 
 function sectionItems(key) {
-  if (key === 'foodBev') return PORTFOLIO.commercial.filter(function (p) { return p.foodBev; });
+  if (key === 'foodBev') return PORTFOLIO.commercial.filter(function (p) { return p.foodBev; }).sort(function (a, b) { return a.foodBev - b.foodBev; });
   return PORTFOLIO[key] || [];
 }
 
