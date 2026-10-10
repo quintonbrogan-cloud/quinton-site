@@ -57,3 +57,6 @@ const PORTFOLIO = {
     { slug: "discover-the-tuscan-olive-trees-growing-in-california", title: "Mitsubishi x Atlas Obscura", video: "https://www.youtube.com/embed/dDVbwwbh05A", type: "youtube", coverImage: "/covers/discover-the-tuscan-olive-trees-growing-in-california.jpg" }
   ]
 };
+
+// Home page hero: one fast-cut reel. Each entry = which spot is on screen for that second (30 frames each).
+const HERO_REEL = { src: "/hero/reel.webm?v=3", mobileSrc: "/hero/reel-720.webm?v=3", shot: 1.2512, slugs: ["shokz-directors-cut","vape-free-wake-up","vape-free-chemikills","panasonic-the-cutting-edge","bumble-bee-line-troye-sivan","asco-sound-of-progress","best-buy","pga2k-nsw2","delloitte-brand-film","connecticut-lottery-keno-yeah","country-crock","dietz-and-watson","best-buy-mess-up","get-there-florida-education","shokz-directors-cut","vape-free-wake-up","vape-free-chemikills","panasonic-the-cutting-edge","bumble-bee-line-troye-sivan","asco-sound-of-progress","best-buy","pga2k-nsw2","delloitte-brand-film","connecticut-lottery-keno-yeah","country-crock","dietz-and-watson","best-buy-mess-up","get-there-florida-education"] };

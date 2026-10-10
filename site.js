@@ -110,6 +110,17 @@ function renderHome() {
     PORTFOLIO[c[0]].forEach(function (p) { if (p.showHome) items.push(Object.assign({ cat: c[1] }, p)); });
   });
 
+  if (typeof HERO_REEL !== 'undefined') {
+    var all = {}; ['commercial', 'musicVideo', 'doc'].forEach(function (k) { PORTFOLIO[k].forEach(function (p) { all[p.slug] = p; }); });
+    var reel = coverVideo(HERO_REEL.mobileSrc && matchMedia('(max-width: 860px)').matches ? HERO_REEL.mobileSrc : HERO_REEL.src, true); reel.classList.add('on');
+    document.getElementById('hero').prepend(reel);
+    var last = '';
+    var label = function () {
+      var p = all[HERO_REEL.slugs[Math.min(HERO_REEL.slugs.length - 1, Math.floor(reel.currentTime / HERO_REEL.shot))]];
+      if (p && p.slug !== last) { last = p.slug; document.getElementById('now').innerHTML = 'Now playing: <a href="/portfolio/' + p.slug + '">' + p.title + '</a>'; }
+    };
+    label(); reel.addEventListener('timeupdate', label);
+  } else {
   var hero = document.getElementById('hero'), heroItems = items.filter(function (p) { return p.hero; }), hv = [], cur = 0;
   heroItems.forEach(function (p, k) { var v = coverVideo(p.hero || p.cover, k === 0); if (k === 0) v.classList.add('on'); hero.prepend(v); hv.push(v); });
   function setNow() { var p = heroItems[cur]; document.getElementById('now').innerHTML = 'Now playing: <a href="/portfolio/' + p.slug + '">' + p.title + '</a>'; }
@@ -124,6 +135,8 @@ function renderHome() {
       hv[nxt].classList.add('on'); hv[cur].classList.remove('on'); cur = nxt; setNow();
       var n2 = (cur + 1) % hv.length; if (!hv[n2].src) hv[n2].src = heroItems[n2].hero || heroItems[n2].cover;
     }, 7000);
+  }
+
   }
 
   var g = document.getElementById('grid');
