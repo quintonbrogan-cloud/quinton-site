@@ -165,7 +165,9 @@ function renderProject() {
   if (item.type === 'wistia') url += '?autoPlay=false';
   var s = splitTitle(item.title);
   document.getElementById('detail').innerHTML =
-    '<div class="player"><iframe src="' + url + '" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div>' +
+    (item.type === 'file'
+      ? '<div class="player"><video src="' + url + '" controls playsinline preload="metadata"></video></div>'
+      : '<div class="player"><iframe src="' + url + '" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div>') +
     '<div class="dmeta"><h1>' + s[0] + (s[1] ? '<small>' + s[1] + '</small>' : '') + '</h1>' +
     '<a class="kicker" href="' + sec.href + '">More ' + sec.label + ' →</a></div>';
 
