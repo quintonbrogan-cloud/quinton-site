@@ -6,6 +6,7 @@ const PORTFOLIO = {
     { slug: "panasonic-the-cutting-edge", title: "Panasonic - The Cutting Edge", video: "https://player.vimeo.com/video/1214894230", type: "vimeo", cover: "/covers/panasonic-the-cutting-edge.webm", foodBev: 1, hero: "/hero/panasonic-the-cutting-edge.webm" },
     { slug: "bumble-bee-line-troye-sivan", title: "Bumble - Bee Line ft. Troye Sivan", video: "https://www.youtube.com/embed/r9uFpYJ38o0", type: "youtube", cover: "/covers/bumble-bee-line-troye-sivan.webm?v=2", hero: "/hero/bumble-bee-line-troye-sivan.webm" },
     { slug: "asco-sound-of-progress", title: "ASCO - Sound of Progress", video: "https://player.vimeo.com/video/710483743", type: "vimeo", cover: "/covers/asco-sound-of-progress.webm", hero: "/hero/asco-sound-of-progress.webm" },
+    { slug: "duracell-stocking-the-sleigh", title: "Duracell - Stocking The Sleigh", video: "https://player.vimeo.com/video/1243264642", type: "vimeo", cover: "/covers/duracell-stocking-the-sleigh.webm" },
     { slug: "best-buy", title: "Best Buy - iPhone 15", video: "https://fast.wistia.net/embed/iframe/pv6df2jktj", type: "wistia", cover: "/covers/best-buy.webm", hero: "/hero/best-buy.webm" },
     { slug: "pga2k-nsw2", title: "PGA2K- Tiger", video: "https://player.vimeo.com/video/1150499022", type: "vimeo", cover: "/covers/pga2k-nsw2.webm" },
     { slug: "amarillo-national-bank-home-loans", title: "Amarillo National Bank - Home Loans", video: "/media/amarillo-national-bank-home-loans.mp4", type: "file", cover: "/covers/amarillo-national-bank-home-loans.webm" },
